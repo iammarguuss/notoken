@@ -1,24 +1,17 @@
 {
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "nodemon": "^2.0.22"
   },
   "scripts": {
-  "start": "concurrently \"npm run start:hideserver\" \"npm run start:sideserver\" \"npm run start:client\"",
-  "start:hideserver": "node hideserver/server.js",
-  "start:sideserver": "node sideserver/server.js",
-  "start:client": "node client/server.js"
-},
-"scripts": {
-  "install:all": "cd hideserver && npm install && cd ../sideserver && npm install && cd ../client && npm install"
-},
-"scripts": {
-  "super:nodemon": "concurrently \"npm run nodemon:hideserver\" \"npm run nodemon:sideserver\" \"npm run nodemon:client\"",
-  "nodemon:hideserver": "nodemon hideserver/server.js",
-  "nodemon:sideserver": "nodemon sideserver/server.js",
-  "nodemon:client": "nodemon client/server.js"
-}
-
-
-
-
+    "start": "concurrently \"npm run start:hideserver\" \"npm run start:sideserver\" \"npm run start:client\"",
+    "start:hideserver": "node hideserver/server.js",
+    "start:sideserver": "node sideserver/server.js",
+    "start:client": "node client/server.js",
+    "install:all": "cd hideserver && npm install && cd ../sideserver && npm install && cd ../client && npm install",
+    "super:nodemon": "concurrently \"npm run nodemon:hideserver\" \"npm run nodemon:sideserver\" \"npm run nodemon:client\"",
+    "nodemon:hideserver": "nodemon hideserver/server.js",
+    "nodemon:sideserver": "nodemon sideserver/server.js",
+    "nodemon:client": "nodemon client/server.js"
+  }
 }

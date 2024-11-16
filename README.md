@@ -13,14 +13,18 @@ This project includes three Node.js servers using Express:
 1. Clone the repository:
    ```bash
    git clone <repository-URL>
-   cd <project-directory>
+   cd <project-directory>```
 Install dependencies for all servers:
+```bash
 npm run install:all
+```
 Running the Servers
 Starting all servers normally:
 To start all three servers simultaneously:
 
+```bash 
 npm start
+```
 This will open three servers:
 
 ```bash 
