@@ -23,14 +23,19 @@ To start all three servers simultaneously:
 npm start
 This will open three servers:
 
+```bash 
 http://localhost:20000 for hideserver
 http://localhost:21000 for sideserver
 http://localhost:20500 for client
+```
 Starting with automatic reloading (nodemon):
 For development with automatic server reloading upon file changes:
-
+```bash 
 npm run super:nodemon
+```
+
 Project Structure
+```bash
 project-root/
 │
 ├── hideserver/
@@ -48,10 +53,13 @@ project-root/
 ├── .gitignore          # Files excluded from the repository
 ├── package.json        # Root file with scripts
 └── README.md           # Project documentation
+```
 Key Commands
+```bash
 npm start — Starts all three servers simultaneously.
 npm run super:nodemon — Starts all three servers using nodemon.
 npm run install:all — Installs all dependencies in subprojects.
+```
 Requirements
 Node.js version >= 16.x
 NPM version >= 7.x
